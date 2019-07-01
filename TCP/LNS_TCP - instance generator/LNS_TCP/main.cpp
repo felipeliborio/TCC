@@ -37,7 +37,7 @@ int main() {
 	srand((int) time(NULL));
 
 	
-	std::string inputDirectory = "D:/dev/TCC/Instances/";
+	std::string inputDirectory = "D:/dev/TCC/Instances_E/";
 	std::string ph = "instance     ";
 	std::cout << ph << "\tmin\tmax\tavg\tmode\tmedian\ttime\tl min\tl max\tr min\tr max\n";
 	for (const auto & file : fs::directory_iterator(inputDirectory)) {

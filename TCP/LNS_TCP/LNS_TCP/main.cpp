@@ -39,8 +39,7 @@ int main() {
 	std::string ph = "instance     ";
 	int limit = 500;
 	//for (auto& limit : {500}) {
-	for (const std::string& inputDirectory : {"D:/dev/TCC/Instances_SSS/", "D:/dev/TCC/Instances_rS/",
-		"D:/dev/TCC/Instances_S/", "D:/dev/TCC/Instances_SS/", "D:/dev/TCC/Instances_SSS/"}) {
+	for (const std::string& inputDirectory : {"D:/dev/TCC/Instances_E"}) {
 		std::cout << "\n" << inputDirectory << "\n";
 		std::cout << ph << "\tmin\tmax\tavg\tmedian\ttime\tto best\tl min\tl max\tr min\tr max\tsolved\n";
 		for (const auto& file : fs::directory_iterator(inputDirectory)) {

@@ -67,7 +67,7 @@ FGraph FLNS::run()
 	}
 	std::uniform_int_distribution<> distrDest(sparsity / 2, top);
 	
-	runMainLoop(bestSolution, newSolution, eng, distrDest, distrVtx, 1000);
+	runMainLoop(bestSolution, newSolution, eng, distrDest, distrVtx, 100);
 
 	auto ElapsedTime = std::chrono::high_resolution_clock::now() - StartTime;
 	lastRunTime = (int)std::chrono::duration_cast<std::chrono::milliseconds>(ElapsedTime).count();
